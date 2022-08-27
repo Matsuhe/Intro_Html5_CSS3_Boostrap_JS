@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Serve para informar o navegador que isso é um html5-->
+<html lang="pt-br">
+    <head>
+        <!-- onde fica os meta dados -->
+        <meta charset="utf-8" />
+        <!-- aceitar os acentos -->
+        <title>Minha Primeira Pagina</title>
+		<script type="text/javascript" src="js/main.js"></script>
+    </head>
+	
+    <body onload="load()">
+	   <h1>Minha página</h1>
+	   <button type="button" onclick="botao()">
+	   clique aqui
+	   </button>
+	   <p id ="agradecimento" onclick="redirecionar()"></p>
+	   <p id ="mousemove" onmouseover="trocar()" onmouseout="voltar()" >Passe o mouse aqui</p>
+	   <!--<p id ="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)" >Passe o mouse aqui</p>-->
+	   <select onchange="mudar(this)">
+			<option value="1">	
+				Valor 1
+			</option>
+			<option value="2">	
+				Valor 2
+			</option>
+			<option value="3">	
+				Valor 3
+			</option>
+	   </select>
+    </body>
+</html>
